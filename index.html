@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evergreen Nursery - Your Plant Paradise</title>
+   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+<link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Ever<span>green</span> Nursery</a>
+            <div class="hamburger">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="section carousel-section">
+        <div class="container">
+            <h2 class="section-title">Bring Nature Home</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="images/Slider 1.jpg" alt="Indoor Plants Collection">
+                        </div>
+                        <div class="carousel-caption">
+                            <h3>Transform your living space with our carefully selected indoor plants</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="images/Slider 2.jpg" alt="Succulents & Cacti">
+                        </div>
+                        <div class="carousel-caption">
+                            <h3>Low-maintenance plants perfect for beginners and busy plant lovers</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="images/Slider 3.jpg" alt="Outdoor Garden Plants">
+                        </div>
+                        <div class="carousel-caption">
+                            <h3>Create your dream garden with our selection of flowering and foliage plants</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn">&#10094;</button>
+                    <button class="carousel-btn next-btn">&#10095;</button>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Evergreen Nursery?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="images/quality-plants.jpg" alt="Quality Plants">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Quality Plants</h3>
+                        <p>We provide only the healthiest plants ensuring you get the best quality for your home or garden.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="images/Plant care.jpg" alt="Expert Advice">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Expert Advice</h3>
+                        <p>Our knowledgeable staff is always ready to help with plant selection & care tips.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="images/Green house.jpg" alt="Sustainable Practices">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Sustainable Practices</h3>
+                        <p>We're committed to environmentally friendly growing methods and sustainable business practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Evergreen Nursery</h3>
+                    <p>Your trusted partner in creating beautiful indoor and outdoor spaces with quality plants and expert guidance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fas fa-facebook-f">FB</i></a>
+                        <a href="#"><i class="fas fa-instagram">IG</i></a>
+                        <a href="#"><i class="fas fa-twitter">TW</i></a>
+                        <a href="#"><i class="fas fa-pinterest">PT</i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li>Plot 23, Prince Charles Drive</li>
+                        <li>Phone: +256 751 231190</li>
+                        <li>Email: info@evergreennursery.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; WAMANI SHAFIK GADAFFI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        class ImageCarousel {
+    constructor() {
+        this.carouselInner = document.querySelector('.carousel-inner');
+        this.carouselItems = document.querySelectorAll('.carousel-item');
+        this.prevBtn = document.querySelector('.prev-btn');
+        this.nextBtn = document.querySelector('.next-btn');
+        this.indicators = document.querySelectorAll('.indicator');
+        
+        this.currentIndex = 0;
+        this.totalItems = this.carouselItems.length;
+        this.carouselInterval = null;
+        this.isAnimating = false;
+        
+        this.init();
+    }
+    
+    init() {
+        if (this.carouselItems.length === 0) return;
+        
+        // Set initial position
+        this.updateCarousel();
+        
+        // Event listeners
+        if (this.nextBtn) {
+            this.nextBtn.addEventListener('click', () => this.nextSlide());
+        }
+        
+        if (this.prevBtn) {
+            this.prevBtn.addEventListener('click', () => this.prevSlide());
+        }
+        
+        // Indicator events
+        this.indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => this.goToSlide(index));
+        });
+        
+        // Start auto-play
+        this.startAutoPlay();
+        
+        // Pause on hover
+        const carousel = document.querySelector('.carousel');
+        if (carousel) {
+            carousel.addEventListener('mouseenter', () => this.stopAutoPlay());
+            carousel.addEventListener('mouseleave', () => this.startAutoPlay());
+        }
+        
+        // Touch/swipe support for mobile
+        this.addTouchSupport();
+    }
+    
+    updateCarousel() {
+        if (this.isAnimating) return;
+        
+        this.isAnimating = true;
+        
+        if (this.carouselInner) {
+            this.carouselInner.style.transform = `translateX(-${this.currentIndex * 100}%)`;
+        }
+        
+        // Update indicators
+        this.indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === this.currentIndex);
+        });
+        
+        // Reset animation flag after transition
+        setTimeout(() => {
+            this.isAnimating = false;
+        }, 500);
+    }
+    
+    nextSlide() {
+        if (this.isAnimating) return;
+        this.currentIndex = (this.currentIndex + 1) % this.totalItems;
+        this.updateCarousel();
+    }
+    
+    prevSlide() {
+        if (this.isAnimating) return;
+        this.currentIndex = (this.currentIndex - 1 + this.totalItems) % this.totalItems;
+        this.updateCarousel();
+    }
+    
+    goToSlide(index) {
+        if (this.isAnimating || index === this.currentIndex) return;
+        this.currentIndex = index;
+        this.updateCarousel();
+    }
+    
+    startAutoPlay() {
+        this.stopAutoPlay(); // Clear any existing interval
+        this.carouselInterval = setInterval(() => this.nextSlide(), 3000);
+    }
+    
+    stopAutoPlay() {
+        if (this.carouselInterval) {
+            clearInterval(this.carouselInterval);
+            this.carouselInterval = null;
+        }
+    }
+    
+    addTouchSupport() {
+        const carousel = document.querySelector('.carousel');
+        if (!carousel) return;
+        
+        let startX = 0;
+        let endX = 0;
+        
+        carousel.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+        
+        carousel.addEventListener('touchmove', (e) => {
+            endX = e.touches[0].clientX;
+        });
+        
+        carousel.addEventListener('touchend', () => {
+            const diff = startX - endX;
+            const minSwipeDistance = 50;
+            
+            if (Math.abs(diff) > minSwipeDistance) {
+                if (diff > 0) {
+                    this.nextSlide(); // Swipe left
+                } else {
+                    this.prevSlide(); // Swipe right
+                }
+            }
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    new ImageCarousel();
+});
+    </script>
+</body>
+</html>

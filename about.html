@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Evergreen Nursery</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+<link rel="stylesheet" href="Styles/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Ever<span>green</span> Nursery</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>About Evergreen Nursery</h1>
+            <p>For over 7 years, we've been helping plant lovers create beautiful, thriving green spaces.</p>
+        </div>
+    </section>
+
+    <section class="section our-story">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="story-content">
+                <div class="story-text">
+                    <p>Evergreen Nursery began in 2017 with a simple mission: to make quality plants and expert gardening advice accessible to everyone. What started as a passion has grown into Kampala's premier plant nursery, but our core values remain the same.</p>
+                    <p style="margin: 20px 0;">Our nursery was born from a childhood passion for plants. Today, we're proud to serve both novice plant parents and experienced gardeners with the same dedication and care. Our team of horticulturists, designers, and plant enthusiasts is committed to helping you find the perfect plants for your space and providing the guidance needed to help them thrive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section values">
+        <div class="container">
+            <h2 class="section-title">Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🌱</div>
+                    <h3>Sustainability</h3>
+                    <p>We practice and promote environmentally responsible gardening, using organic methods and supporting local growers.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💚</div>
+                    <h3>Quality</h3>
+                    <p>Every plant we sell is carefully selected and nurtured to ensure it arrives at your home healthy and ready to thrive.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">👥</div>
+                    <h3>Community</h3>
+                    <p>We believe in building connections through plants, offering workshops and supporting local gardening initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section team">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="images/Ahumuza Shawn.jpg" width="300" height="200 alt="Ahumuza Shawn">
+                    </div>
+                    <h3>Ahumuza Shawn</h3>
+                    <p class="role">Founder & Head Horticulturist</p>
+                    <p>With a degree in Botany and 15 years of gardening experience, Shawn ensures every plant meets our quality standards.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="images/Ayebale patience.jpg" width="300" height="200 alt="Ayebale Patience">
+                    </div>
+                    <h3>Ayebale Patience</h3>
+                    <p class="role">Operations Manager</p>
+                    <p>Patience handles the business side while maintaining her passion for rare succulents and cacti.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="images/Busobozi Jason.jpg" width="300" height="200 alt="Busobozi Jason">
+                    </div>
+                    <h3>Busobozi Jason</h3>
+                    <p class="role">Garden Design Specialist</p>
+                    <p>Jason combines his landscape architecture background with a keen eye for creating beautiful, functional spaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Evergreen Nursery</h3>
+                    <p>Your trusted partner in creating beautiful indoor and outdoor spaces with quality plants and expert guidance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fas fa-facebook-f">FB</i></a>
+                        <a href="#"><i class="fas fa-instagram">IG</i></a>
+                        <a href="#"><i class="fas fa-twitter">TW</i></a>
+                        <a href="#"><i class="fas fa-pinterest">PT</i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li>Plot 23, Prince Charles Drive</li>
+                        <li>Phone: +256 751 231190</li>
+                        <li>Email: info@evergreennursery.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; WAMANI SHAFIK GADAFFI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

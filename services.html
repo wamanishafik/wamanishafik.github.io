@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Evergreen Nursery</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+    <link rel="stylesheet" href="Styles/style.css">
+    </head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Ever<span>green</span> Nursery</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>From plant selection to garden design, we offer comprehensive services to bring your green dreams to life.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">What We Offer</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/plant-selection.jpg" width="600" height="400" alt="Plant Selection Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Plant Selection & Consultation</h3>
+                        <p>Our experts will help you choose the perfect plants for your space, considering light conditions, maintenance level, and your personal style.</p>
+                        <p class="price">Starting at Ugx 100,000</p>
+                        <a href="contact.html" class="btn">Book Consultation</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/garden-design.jpeg" width="600" height="400" alt="Garden Design Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Garden Design & Installation</h3>
+                        <p>Transform your outdoor space with our complete garden design service. We handle everything from planning to planting.</p>
+                        <p class="price">Starting at Ugx 500,000</p>
+                        <a href="contact.html" class="btn">Get a Quote</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/Plant care.jpg" width="600" height="400" alt="Plant Care Service">
+                    </div>
+                    <div class="service-content">
+                        <h3>Plant Care & Maintenance</h3>
+                        <p>Keep your plants thriving with our ongoing care services. We offer everything from seasonal maintenance to specialized plant healthcare.</p>
+                        <p class="price">Starting at Ugx 25,000/month</p>
+                        <a href="contact.html" class="btn">Schedule Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section consultation">
+        <div class="container">
+            <div class="consultation-content">
+                <div class="consultation-text">
+                    <h2 class="section-title">Free Initial Consultation</h2>
+                    <p>Not sure where to start? We offer a complimentary 30-minute consultation to discuss your plant needs and goals. During this session, we'll:</p>
+                    <ul style="margin: 20px 0; padding-left: 20px;">
+                        <li style="list-style-type: disc; margin-bottom: 10px;">Assess your space and light conditions</li>
+                        <li style="list-style-type: disc; margin-bottom: 10px;">Discuss your plant preferences and maintenance capabilities</li>
+                        <li style="list-style-type: disc; margin-bottom: 10px;">Provide initial recommendations for suitable plants</li>
+                        <li style="list-style-type: disc; margin-bottom: 10px;">Outline potential next steps for your project</li>
+                    </ul>
+                    <p>This no-obligation consultation is the perfect way to begin your plant journey with expert guidance.</p>
+                    <a href="contact.html" class="btn" style="margin-top: 20px;">Schedule Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Evergreen Nursery</h3>
+                    <p>Your trusted partner in creating beautiful indoor and outdoor spaces with quality plants and expert guidance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fas fa-facebook-f">FB</i></a>
+                        <a href="#"><i class="fas fa-instagram">IG</i></a>
+                        <a href="#"><i class="fas fa-twitter">TW</i></a>
+                        <a href="#"><i class="fas fa-pinterest">PT</i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li>Plot 23, Prince Charles Drive</li>
+                        <li>Phone: +256 751 231190</li>
+                        <li>Email: info@evergreennursery.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; WAMANI SHAFIK GADAFFI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
